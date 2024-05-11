@@ -2,7 +2,7 @@
 
 set -e
 
-PASSPHRASE="asdfqweasdqweasd"
+PASSPHRASE=$(openssl rand -base64 32)
 PRIVATE_KEY_PATH=keys/private.pem
 PUBLIC_KEY_PATH=keys/public.pem
 FILE_PATH=./file.txt
